@@ -12,6 +12,7 @@ class Piece {
         int colour;
     
     public:
+        Piece(); //default constructor
         Piece(string symbol, int colour, int i, int j); //Overloaded Constructor
         string getSymbol();
         int getColour();

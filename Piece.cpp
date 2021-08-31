@@ -2,7 +2,9 @@
 #include "Piece.h"
 using namespace std;
 
-//Constructor
+//Constructors
+Piece::Piece() {}
+
 Piece::Piece(string symbol, int colour, int i, int j) {
     this->symbol = symbol;
     this->colour = colour;
