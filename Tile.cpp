@@ -8,7 +8,7 @@ using namespace std;
 Tile::Tile(int i, int j) {
     this->i = i;
     this->j = j;
-    this->piece = //Empty;
+    this->piece = NULL;
 }
 
 Tile::Tile(int i, int j, Piece piece) {
@@ -30,5 +30,11 @@ Piece Tile::getPiece() {
 //Func to remove piece
 void Tile::removePiece(){
     this->occupied = false;
-    this->piece = //Empty
+    this->piece = NULL;
+}
+
+//Func to set piece
+void Tile::setPiece(Piece piece) {
+    this->piece = piece;
+    this->occupied = true;
 }
